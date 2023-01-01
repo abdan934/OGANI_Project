@@ -33,7 +33,6 @@
         </div>
 
         <!-- Humberger Begin -->
-
         <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
@@ -193,9 +192,9 @@
                                 <span>Kategori</span>
                             </div>
                             <ul>
-                                <li><a href="#">SEMBAKO</a></li>
-                                <li><a href="#">Sayuran</a></li>
-                                <li><a href="#">Buah-Buahan</a></li>
+                                <li data-filter=".oranges"><a href="#">SEMBAKO</a></li>
+                                <li data-filter=".vegetables"><a href="#">Sayuran</a></li>
+                                <li data-filter=".fresh-meat"><a href="#">Buah-Buahan</a></li>
                                 <!-- <li><a href="#">Fresh Berries</a></li>
                 <li><a href="#">Ocean Foods</a></li>
                 <li><a href="#">Butter & Eggs</a></li>
@@ -293,6 +292,7 @@
 
         <!-- Featured Section Begin -->
         <section class="featured spad">
+            <div class="target-1">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -305,7 +305,7 @@
                                 <li data-filter=".oranges">Sembako</li>
                                 <li data-filter=".fresh-meat">Buah</li>
                                 <li data-filter=".vegetables">Sayuran</li>
-                                <li data-filter=".fastfood">Fastfood</li>
+                                <li data-filter=".fastfood">Daging</li>
                             </ul>
                         </div>
                     </div>
@@ -332,7 +332,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges">
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/telur-puyuh-2.jpg">
                                 <ul class="featured__item__pic__hover">
@@ -349,6 +349,27 @@
                             </div>
                             <div class="featured__item__text">
                                 <h6><a href="#">Telur Puyuh</a></h6>
+                                <h5>Rp.300.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/minyak-goreng.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Minyak Goreng</a></h6>
                                 <h5>Rp.300.000,00</h5>
                             </div>
                         </div>
@@ -395,7 +416,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/strawbery-2.jpg">
                                 <ul class="featured__item__pic__hover">
@@ -479,8 +500,348 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/kacang-panjang.jpeg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Kacang Panjang</a></h6>
+                                <h5>Rp.50.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/kangkung.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Kangkung</a></h6>
+                                <h5>Rp.50.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/sledri.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Sledri</a></h6>
+                                <h5>Rp.20.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/kubis.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Kubis</a></h6>
+                                <h5>Rp.30.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/terong.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Terong Ungu</a></h6>
+                                <h5>Rp.50.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/slebor.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Sawi Putih</a></h6>
+                                <h5>Rp.50.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/daun-bawang.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Daun Bawang</a></h6>
+                                <h5>Rp.20.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/cabai.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Cabai Rawit</a></h6>
+                                <h5>Rp.90.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Pisang</a></h6>
+                                <h5>Rp.20.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Jambu Biji Merah</a></h6>
+                                <h5>Rp.30.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Semangka</a></h6>
+                                <h5>Rp.40.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Blueberry</a></h6>
+                                <h5>Rp.80.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Daging Sapi</a></h6>
+                                <h5>Rp.150.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood ">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/dagingayam.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Daging Ayam</a></h6>
+                                <h5>Rp.35.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/daging-wedus.jpeg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Daging Kambing</a></h6>
+                                <h5>Rp.150.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/iga-sapi.jpeg">
+                                <ul class="featured__item__pic__hover">
+                                    <li>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-retweet"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="#">Iga Sapi</a></h6>
+                                <h5>Rp.200.000,00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
+        </div>
         </section>
         <!-- Featured Section End -->
 
